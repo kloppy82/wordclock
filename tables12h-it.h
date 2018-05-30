@@ -39,7 +39,7 @@ enum wc12h_words
     WP_MENO_IT,
     WP_E_IT,
     WP_MEZZO_IT,
-    WP_UNO_IT,
+    WP_UNA_IT,
     WP_DUE_IT,
     WP_TRE_IT,
     WP_QUATTRO_IT,
