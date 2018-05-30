@@ -11,7 +11,7 @@
  *   WALCKYSETTE
  *   DIECIUNDICI
  *   QUATTRONOVE
- *   DOCICISMENO
+ *   DODICISMENO
  *   EPUNCQUARTO
  *   TRENTADIECI
  *   VENTICINQUE
@@ -77,7 +77,7 @@ const WORD_ILLUMINATION illumination[WP_COUNT] =
     {0,0,0},  //  0 = WP_END_OF_WORDS = ""
 
     {0,0,4},  // 27 = WP_SONO_IT,   = "ES"
-    {0,5,4},  // 28 = WP_LE_IT,   = "ISCH"
+    {0,5,2},  // 28 = WP_LE_IT,   = "ISCH"
     {2,2,6},  // 29 = WP_CINQUE1_IT,   = "FÜF"
     {7,5,6},  // 30 = WP_QUARTO_IT,   = "VIERTU"
     {4,0,5},  // 31 = WP_DIECI1_IT,   = "ZÄÄ"
@@ -86,7 +86,7 @@ const WORD_ILLUMINATION illumination[WP_COUNT] =
     {7,0,1},  // 34 = WP_E_IT,  = "AB"
     {3,3,5},  // 35 = WP_MEZZO_IT,   = "HAUBI"
     {2,8,3},  // 36 = WP_UNA_IT,   = "EIS"
-    {0,7,3},  // 37 = WP_DUE_IT,   = "ZWÖI"
+    {0,8,3},  // 37 = WP_DUE_IT,   = "ZWÖI"
     {1,1,3},  // 38 = WP_TRE_IT,   = "DRÜ"
     {5,0,7},  // 39 = WP_QUATTRO_IT,   = "VIERI"
     {9,5,6},  // 40 = WP_CINQUE2_IT,   = "FÜFI"
@@ -111,7 +111,7 @@ const char * display[WC_ROWS] =
     "WALCKYSETTE",
     "DIECIUNDICI",
     "QUATTRONOVE",
-    "DOCICISMENO",
+    "DODICISMENO",
     "EPUNCQUARTO",
     "TRENTADIECI",
     "VENTICINQUE"

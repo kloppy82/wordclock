@@ -365,7 +365,7 @@ static const char * display_wc12h_it =
     "WALCKYSETTE"
     "DIECIUNDICI"
     "QUATTRONOVE"
-    "DOCICISMENO"
+    "DODICISMENO"
     "EPUNCQUARTO"
     "TRENTADIECI"
     "VENTICINQUE"
