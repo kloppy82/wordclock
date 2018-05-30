@@ -357,6 +357,21 @@ static const char * display_wc12h_se =
     "TIOELVATOLV"
 };
 
+static const char * display_wc12h_it =
+{
+    "SONOXLEBDUE"
+    "ETRESEIOTTO"
+    "LACINQUEUNA"
+    "WALCKYSETTE"
+    "DIECIUNDICI"
+    "QUATTRONOVE"
+    "DOCICISMENO"
+    "EPUNCQUARTO"
+    "TRENTADIECI"
+    "VENTICINQUE"
+};
+
+
 static const char *     display;
 static char *           wcname;
 
@@ -592,6 +607,11 @@ main (int argc, char ** argv)
     {
 	fname = FNAME_WC12H_SE;
 	display = display_wc12h_se;
+    }
+    else if (! strcmp (wcname, "wc12h-it"))
+    {
+    fname = FNAME_WC12H_IT;
+    display = display_wc12h_it;
     }
     else if (! strcmp (wcname, "wc24h-pl"))
     {
