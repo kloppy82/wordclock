@@ -1,7 +1,7 @@
 CFLAGS = -O -Wall -Wextra -Werror
 
 all: wc.exe wc24h-tables-de.txt wc24h-tables-pl.txt wc12h-tables-ch1.txt wc12h-tables-ch2.txt wc12h-tables-de.txt wc12h-tables-en1.txt \
-     wc12h-tables-en2.txt wc12h-tables-fr.txt wc12h-tables-se.txt
+     wc12h-tables-en2.txt wc12h-tables-fr.txt wc12h-tables-se.txt wc12h-tables-it.txt
 
 wc.exe: wc.c tables-gen.h
 	cc $(CFLAGS) wc.c -o wc.exe
@@ -32,6 +32,9 @@ wc12h-tables-fr.txt: make-tables12h-fr
 
 wc12h-tables-se.txt: make-tables12h-se
 	./make-tables12h-se
+
+wc12h-tables-it.txt: make-tables12h-it
+	./make-tables12h-it
 
 make-tables24h-de: make-tables24h-de.o tables24h-de.o
 	cc make-tables24h-de.o tables24h-de.o -o make-tables24h-de
@@ -114,5 +117,14 @@ make-tables12h-se.o: make-tables.c tables12h-se.h tables-gen.h
 tables12h-se.o: tables12h-se.c tables12h-se.h tables-gen.h
 	cc $(CFLAGS) -DWCLOCK24H=0 -c tables12h-se.c
 
+make-tables12h-it: make-tables12h-it.o tables12h-it.o
+	cc make-tables12h-it.o tables12h-it.o -o make-tables12h-it
+
+make-tables12h-it.o: make-tables.c tables12h-it.h tables-gen.h
+	cc $(CFLAGS) -DWCLOCK24H=0 -DWCLOCK12H_IT -c make-tables.c -o make-tables12h-it.o
+
+tables12h-it.o: tables12h-it.c tables12h-it.h tables-gen.h
+	cc $(CFLAGS) -DWCLOCK24H=0 -c tables12h-it.c
+
 clean:
-	rm -f *.o make-tables12h-ch1 make-tables12h-ch2 make-tables12h-de make-tables12h-en1 make-tables12h-en2 make-tables12h-fr make-tables12h-se make-tables24h-de make-tables24h-pl wc.exe
+	rm -f *.o make-tables12h-ch1 make-tables12h-ch2 make-tables12h-de make-tables12h-en1 make-tables12h-en2 make-tables12h-fr make-tables12h-se make-tables12h-it make-tables24h-de make-tables24h-pl wc.exe
