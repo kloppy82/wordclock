@@ -51,7 +51,7 @@ enum wc12h_words
     WP_DIECI2_IT,
     WP_UNDICI_IT,
     WP_DODICI_IT,
-    WP_ORE_IT,
+    WP_UN_IT,
     WP_TRENTA_IT,
 
     WP_COUNT                                                    // last item is count
