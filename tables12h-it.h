@@ -41,7 +41,7 @@ enum wc12h_words
     WP_DIECI1_IT,
     WP_VENTI_IT,
     WP_MENO_IT,
-    WP_E_IT,
+    WP_E1_IT,
     WP_MEZZO_IT,
     WP_UNA_IT,
     WP_DUE_IT,
@@ -57,7 +57,8 @@ enum wc12h_words
     WP_DODICI_IT,
     WP_UN_IT,
     WP_TRENTA_IT,
-    WP_LA_IT,   
+    WP_LA_IT,
+    WP_E2_IT,  
 
     WP_COUNT                                                    // last item is count
 };
