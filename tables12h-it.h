@@ -25,6 +25,10 @@
 #define MINUTE_MODES_COUNT      DISPLAY_MODES_COUNT     // MODES_COUNT is identical with MODES_COUNT on WC12h
 #define MINUTE_COUNT            12                      // 12 steps per hour: min = 0, 5, 10, 15 ....
 
+
+#define WP_LE_IT_UNUSED    0
+#define WP_SONO_IT_UNUSED  0
+
 enum wc12h_words
 {
     WP_END_OF_WORDS,
@@ -53,6 +57,7 @@ enum wc12h_words
     WP_DODICI_IT,
     WP_UN_IT,
     WP_TRENTA_IT,
+    WP_LA_IT,   
 
     WP_COUNT                                                    // last item is count
 };

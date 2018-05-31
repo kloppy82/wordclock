@@ -33,24 +33,24 @@ const DISPLAY_MODES tbl_modes[DISPLAY_MODES_COUNT] =
     { 0, 0, "ITALIANO" },
 };
 
-const uint8_t tbl_it_is[2] = { WP_SONO_IT, WP_LE_IT };
+const uint8_t tbl_it_is[2] = { WP_SONO_IT_UNUSED, WP_LE_IT_UNUSED};
 
 const uint8_t tbl_hours[HOUR_MODES_COUNT][HOUR_COUNT][MAX_HOUR_WORDS] =
 {
     // SWISS1
     {                       // tbl_hours[1][] = hh:mm (not hh:00)
-        {WP_DODICI_IT},     // 00:mm
-        {WP_UNA_IT},        // 01:mm
-        {WP_DUE_IT},        // 02:mm
-        {WP_TRE_IT},        // 03:mm
-        {WP_QUATTRO_IT},    // 04:mm
-        {WP_CINQUE1_IT},    // 05:mm
-        {WP_SEI_IT},        // 06:mm
-        {WP_SETTE_IT},      // 07:mm
-        {WP_OTTO_IT},       // 08:mm
-        {WP_NOVE_IT},       // 09:mm
-        {WP_DIECI1_IT},     // 10:mm
-        {WP_UNDICI_IT}      // 11:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_DODICI_IT},     // 00:mm
+        {WP_E_IT,       WP_LA_IT,   WP_UNA_IT},        // 01:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_DUE_IT},        // 02:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_TRE_IT},        // 03:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_QUATTRO_IT},    // 04:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_CINQUE1_IT},    // 05:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_SEI_IT},        // 06:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_SETTE_IT},      // 07:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_OTTO_IT},       // 08:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_NOVE_IT},       // 09:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_DIECI1_IT},     // 10:mm
+        {WP_SONO_IT,    WP_LE_IT,   WP_UNDICI_IT}      // 11:mm
     },
 };
 
@@ -98,7 +98,8 @@ const WORD_ILLUMINATION illumination[WP_COUNT] =
     {4,5,6},  // 46 = WP_UNDICI_IT,   = "EUFI"
     {6,0,6},  // 47 = WP_DODICI_IT,   = "ZWÖUFI"
     {7,2,2},  // 48 = WP_UN_IT,   = "UHR"
-    {8,0,6},  // 49 = WP_TRENTA_IT,
+    {8,0,6},  // 49 = WP_TRENTA_IT
+    {2,0,2},  // 49 = WP_TRENTA_IT,
 };
     
     
