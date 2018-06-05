@@ -62,9 +62,9 @@ const MINUTEDISPLAY tbl_minutes[MINUTE_MODES_COUNT][MINUTE_COUNT] =
         {MDF_IT_IS_1 | MDF_HOUR_OFFSET_0, {WP_E2_IT,    WP_DIECI2_IT                   }},         // 10
         {MDF_IT_IS_1 | MDF_HOUR_OFFSET_0, {WP_E2_IT,    WP_UN_IT,       WP_QUARTO_IT   }},         // 15
         {MDF_IT_IS_1 | MDF_HOUR_OFFSET_0, {WP_E2_IT,    WP_VENTI_IT                    }},         // 20
-        {MDF_IT_IS_1 | MDF_HOUR_OFFSET_1, {WP_E2_IT,    WP_VENTI_IT,    WP_CINQUE2_IT  }},         // 25
-        {MDF_IT_IS_1 | MDF_HOUR_OFFSET_1, {WP_E2_IT,    WP_TRENTA_IT                   }},         // 30
-        {MDF_IT_IS_1 | MDF_HOUR_OFFSET_1, {WP_E2_IT,    WP_TRENTA_IT,   WP_CINQUE2_IT, }},         // 35
+        {MDF_IT_IS_1 | MDF_HOUR_OFFSET_0, {WP_E2_IT,    WP_VENTI_IT,    WP_CINQUE2_IT  }},         // 25
+        {MDF_IT_IS_1 | MDF_HOUR_OFFSET_0, {WP_E2_IT,    WP_TRENTA_IT                   }},         // 30
+        {MDF_IT_IS_1 | MDF_HOUR_OFFSET_0, {WP_E2_IT,    WP_TRENTA_IT,   WP_CINQUE2_IT, }},         // 35
         {MDF_IT_IS_1 | MDF_HOUR_OFFSET_1, {WP_MENO_IT,  WP_VENTI_IT                    }},         // 40
         {MDF_IT_IS_1 | MDF_HOUR_OFFSET_1, {WP_MENO_IT,  WP_UN_IT,       WP_QUARTO_IT   }},         // 45
         {MDF_IT_IS_1 | MDF_HOUR_OFFSET_1, {WP_MENO_IT,  WP_DIECI2_IT                   }},         // 50
